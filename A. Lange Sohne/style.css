@@ -1,0 +1,201 @@
+#container {
+    background-color: #FFE5CC;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+}
+
+#header {
+    width: 98.5%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #FFE5CC;
+}
+
+#header-img {
+    margin: 10px 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.control {
+    position: relative;
+    font-size: 40px;
+    line-height: 60px;
+    padding: 10px;
+    color: black;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#control {
+    display: none;
+}
+
+#productName {
+    margin: 30px;
+}
+
+#nav-bar ul li {
+    margin: 40px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#formPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    text-align: center;
+}
+
+input[type=email] {
+    width: 200px;
+    height: 20px;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    width: 100px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+#banner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+#company {
+    margin-top: 80px;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#homeBoxes {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid grey;
+    margin: 5px;
+    padding-bottom: 15px;
+}
+
+.button {
+    width: 85px;
+    height: 30px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+footer {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+ul li {
+    float: right;
+    padding: 0px 5px;
+    color: black;
+}
+
+#copyright {
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media(max-width: 800px) {
+
+
+    #header {
+        width: 97.6%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .control {
+        display: block;
+    }
+
+    #nav-bar {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #nav-bar ul {
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    #nav-bar ul li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #nav-bar a {
+        width: 100%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    #control:checked~ul {
+        display: block;
+    }
+
+    #homeBoxes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+}

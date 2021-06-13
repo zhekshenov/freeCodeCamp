@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>
+        <title>Coder Coffee Patisserie</title>
+    </title>
+</head>
+
+<body>
+    <h1 id="title">Coder Coffee Patisserie Survey Form</h1>
+    <div id="container">
+        <p id="description">Thank you for taking the time to help us improve the patisserie</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label> <br>
+            <input type="text" placeholder="Enter your name" id="name" name="name" required> <br>
+            <label for="email" id="email-label">Email</label> <br>
+            <input type="email" placeholder="Enter your Email" id="email" required> <br>
+            <label for="age" id="number-label">Age (optional)</label> <br>
+            <input type="number" placeholder="Age" id="number" min="1" max="100"> <br>
+            <label for="currentRole" id="dropdown-label">Which option best describes your current role?</label> <br>
+            <select id="dropdown">
+                <option value="" disabled selected>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select> <br>
+            <p>Would you recommend Coder Coffee Patisserie to a friend</p>
+            <input type="radio" id="definitely" name="recommendation" value="definitely">
+            <label for="definitely">Definitely</label><br>
+            <input type="radio" id="maybe" name="recommendation" value="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" id="notSure" name="recommendation" value="notSure">
+            <label for="notSure">Not sure</label> <br>
+            <label for="favoriteCoffee" id="dropdown-label_2">What is your favorite coffee of Coder Patisserie</label> <br>
+            <select id="dropdown_2">
+                <option value="" disabled selected>Select an option</option>
+                <option value="1">Espresso</option>
+                <option value="2">Americano</option>
+                <option value="3">Filter Coffee</option>
+                <option value="4">Latte</option>
+                <option value="5">Cappuccino</option>
+                <option value="6">Macchiato</option>
+            </select> <br>
+            <p>What type of coffee would you like to see? (Check all that apply)</p>
+            <input type="checkbox" id="coffee1" name="coffee1" value="Cortado">
+            <label for="coffee1">Cortado</label> <br>
+            <input type="checkbox" id="coffee2" name="coffee2" value="Red_Eye">
+            <label for="coffee2">Red Eye</label> <br>
+            <input type="checkbox" id="coffee3" name="coffee3" value="Mocha">
+            <label for="coffee3">Mocha</label> <br>
+            <input type="checkbox" id="coffee4" name="coffee4" value="Flat_White">
+            <label for="coffee3">Flat White</label> <br>
+            <input type="checkbox" id="coffee5" name="coffee5" value="Irish_Coffee">
+            <label for="coffee5">Irish Coffee</label> <br>
+            <input type="checkbox" id="coffee6" name="coffee6" value="Cold_Brew">
+            <label for="coffee6">Cold Brew</label> <br>
+            <input type="checkbox" id="coffee7" name="coffee7" value="Iced_Espresso">
+            <label for="coffee7">Iced Espresso</label> <br>
+            <input type="checkbox" id="coffee8" name="coffee8" value="nitro_Cold_Brew">
+            <label for="coffee8">Nitro Cold Brew</label> <br>
+            <input type="checkbox" id="coffee9" name="coffee9" value="Frappuccino">
+            <label for="coffee9">Frappuccino</label> <br>
+            <input type="checkbox" id="coffee10" name="coffee10" value="Café_au_Lait ">
+            <label for="coffee10">Café au Lait </label> <br>
+            <p>Any comments or suggestions?</p>
+            <textarea name="message" placeholder="Enter your comment here..." id="comment" cols="45" rows="10"></textarea>
+            <button type="submit" id="submit" onclick="alert('Thanks for filling out the survey form')">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
